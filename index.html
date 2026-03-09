@@ -1,140 +1,257 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koleksi Program Dart</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-    
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #FEF9E7; /* Kuning Pastel yang elegan */
-            color: #333;
-        }
-        .card {
-            background: #ffffff;
-            border-radius: 16px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-            transition: transform 0.2s ease-in-out;
-        }
-        .card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
-        }
-        iframe {
-            width: 100%;
-            height: 450px;
-            border: 1px solid #eee;
-            border-radius: 8px;
-        }
-        /* Styling khusus untuk Program 1 & 2 */
-        pre {
-            background: #282a36;
-            color: #f8f8f2;
-            padding: 1.5rem;
-            border-radius: 8px;
-            overflow-x: auto;
-            font-family: 'Fira Code', monospace;
-            font-size: 0.9rem;
-            line-height: 1.5;
-        }
-        .header-gradient {
-            background: linear-gradient(135deg, #F9E79F, #FAD7A1);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    </style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Laporan OOP Dart</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Segoe UI, sans-serif;
+background:#FFF9C4;
+color:#5d4037;
+}
+
+header{
+background:#FFE082;
+padding:40px;
+text-align:center;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+margin-bottom:25px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+.card h2{
+margin-top:0;
+color:#8d6e63;
+}
+
+button{
+background:#FFD54F;
+border:none;
+padding:10px 18px;
+border-radius:8px;
+cursor:pointer;
+font-size:15px;
+}
+
+button:hover{
+background:#FFCA28;
+}
+
+.popup{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+justify-content:center;
+align-items:center;
+}
+
+.popup-content{
+background:white;
+width:90%;
+height:85%;
+border-radius:12px;
+padding:15px;
+}
+
+iframe{
+width:100%;
+height:90%;
+border:none;
+border-radius:10px;
+}
+
+.close{
+background:#ef5350;
+color:white;
+margin-bottom:10px;
+}
+
+@media(max-width:600px){
+
+.popup-content{
+height:90%;
+}
+
+}
+
+</style>
+
+<script>
+
+function buka(link){
+document.getElementById("popup").style.display="flex";
+document.getElementById("frame").src=link;
+}
+
+function tutup(){
+document.getElementById("popup").style.display="none";
+document.getElementById("frame").src="";
+}
+
+</script>
+
 </head>
-<body class="antialiased min-h-screen p-4 md:p-8">
 
-    <div class="max-w-4xl mx-auto">
-        
-        <header class="text-center mb-12 mt-8">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gray-800">Koleksi Program <span class="text-yellow-600">Dart</span></h1>
-            <p class="text-gray-600 text-lg">Kumpulan proyek interaktif dan cuplikan kode Dart.</p>
-        </header>
+<body>
 
-        <div class="space-y-8">
+<header>
 
-            <div class="card p-6 md:p-8">
-                <h2 class="text-2xl font-semibold mb-4 text-gray-800 flex items-center">
-                    <span class="bg-yellow-200 text-yellow-800 rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">1</span>
-                    Program 1
-                </h2>
-                <pre><code>void main() {
-  // Masukkan paste kode Dart dari Gist 91e868103a90d2690e2fc6ddf59a1a17 di sini
-  print('Halo, ini Program 1 statis!');
-}</code></pre>
-            </div>
+<h1>LAPORAN PRAKTIKUM OOP DART</h1>
 
-            <div class="card p-6 md:p-8">
-                <h2 class="text-2xl font-semibold mb-4 text-gray-800 flex items-center">
-                    <span class="bg-yellow-200 text-yellow-800 rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">2</span>
-                    Program 2
-                </h2>
-                <pre><code>void main() {
-  // Masukkan paste kode Dart dari Gist 62d900a30717865ed2fc7f248c33fb0a di sini
-  print('Halo, ini Program 2 statis!');
-}</code></pre>
-            </div>
+<p>Nama        : Saskia Mauli Tantria</p>
+<p>NIM         : 251410034
+<p>Kelas       : SI2A
+<p>Mata Kuliah : Object Oriented Programming</p>
 
-            <div class="card p-6 md:p-8">
-                <h2 class="text-2xl font-semibold mb-4 text-gray-800 flex items-center">
-                    <span class="bg-yellow-200 text-yellow-800 rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">3</span>
-                    Program 3
-                </h2>
-                <iframe src="https://dartpad.dev/embed-inline.html?id=7381bbfa23b87ca7b99ae2932d716235&run=true" title="DartPad Program 3"></iframe>
-            </div>
+</header>
 
-            <div class="card p-6 md:p-8">
-                <h2 class="text-2xl font-semibold mb-4 text-gray-800 flex items-center">
-                    <span class="bg-yellow-200 text-yellow-800 rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">4</span>
-                    Program 4
-                </h2>
-                <iframe src="https://dartpad.dev/embed-inline.html?id=22917ac265c62a9bf43b773798cd9baf&run=true" title="DartPad Program 4"></iframe>
-            </div>
+<div class="container">
 
-            <div class="card p-6 md:p-8">
-                <h2 class="text-2xl font-semibold mb-4 text-gray-800 flex items-center">
-                    <span class="bg-yellow-200 text-yellow-800 rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">5</span>
-                    Program 5
-                </h2>
-                <iframe src="https://dartpad.dev/embed-inline.html?id=2597faefa73fad81b2d49a6d004b6505&run=true" title="DartPad Program 5"></iframe>
-            </div>
+<div class="card">
 
-            <div class="card p-6 md:p-8">
-                <h2 class="text-2xl font-semibold mb-4 text-gray-800 flex items-center">
-                    <span class="bg-yellow-200 text-yellow-800 rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">6</span>
-                    Program 6
-                </h2>
-                <iframe src="https://dartpad.dev/embed-inline.html?id=1f0c95c011d4fba88f8a7eff4b74f0e6&run=true" title="DartPad Program 6"></iframe>
-            </div>
+<h2>Pengertian OOP</h2>
 
-            <div class="card p-6 md:p-8">
-                <h2 class="text-2xl font-semibold mb-4 text-gray-800 flex items-center">
-                    <span class="bg-yellow-200 text-yellow-800 rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">7</span>
-                    Program 7
-                </h2>
-                <iframe src="https://dartpad.dev/embed-inline.html?id=ee46a546d9d85bf8236f0c23f00a99da&run=true" title="DartPad Program 7"></iframe>
-            </div>
+<p>
+Object Oriented Programming (OOP) adalah paradigma pemrograman yang
+menggunakan konsep objek dan class untuk menyusun struktur program.
+</p>
 
-            <div class="card p-6 md:p-8">
-                <h2 class="text-2xl font-semibold mb-4 text-gray-800 flex items-center">
-                    <span class="bg-yellow-200 text-yellow-800 rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">8</span>
-                    Program 8
-                </h2>
-                <iframe src="https://dartpad.dev/embed-inline.html?id=7a8476b9463e5c7df5b38a6f4da4020e&run=true" title="DartPad Program 8"></iframe>
-            </div>
+</div>
 
-        </div>
+<div class="card">
 
-        <footer class="mt-12 text-center text-gray-500 text-sm pb-8">
-            Dibuat dengan 💛 menggunakan HTML & Tailwind CSS
-        </footer>
+<h2>Konsep Dasar OOP</h2>
 
-    </div>
+<ul>
+<li>Class</li>Merupakan blueprint atau cetakan untuk membuat objek.</li>
+<li>Object</li>Merupakan hasil dari pembuatan class.</li>
+<li>Encapsulation</li>Menggabungkan data dan method dalam satu objek.</li>
+<li>Inheritance</li>Pewarisan sifat dari class lainnya.</li>
+<li>Polymorphism</li>Satu method dapat mempunyai banyak bentuk.</li>
+</ul>
+
+</div>
+
+<!-- PROGRAM 1 TANPA LINK -->
+<div class="card">
+<h2>Program 1</h2>
+<p>Contoh program dasar class dan object pada Dart.</p>
+</div>
+
+<!-- PROGRAM 2 TANPA LINK -->
+<div class="card">
+<h2>Program 2</h2>
+<p>Contoh penggunaan constructor pada class.</p>
+</div>
+
+<div class="card">
+<h2>Program 3</h2>
+<button onclick="buka('https://dartpad.dev/embed-inline.html?id=91e868103a90d2690e2fc6ddf59a1a17&run=true')">
+Lihat Program
+</button>
+</div>
+
+<div class="card">
+<h2>Program 4</h2>
+<button onclick="buka('https://dartpad.dev/embed-inline.html?id=62d900a30717865ed2fc7f248c33fb0a&run=true')">
+Lihat Program
+</button>
+</div>
+
+<div class="card">
+<h2>Program 5</h2>
+<button onclick="buka('https://dartpad.dev/embed-inline.html?id=7381bbfa23b87ca7b99ae2932d716235&run=true')">
+Lihat Program
+</button>
+</div>
+
+<div class="card">
+<h2>Program 6</h2>
+<button onclick="buka('https://dartpad.dev/embed-inline.html?id=22917ac265c62a9bf43b773798cd9baf&run=true')">
+Lihat Program
+</button>
+</div>
+
+<div class="card">
+<h2>Program 7</h2>
+<button onclick="buka('https://dartpad.dev/embed-inline.html?id=2597faefa73fad81b2d49a6d004b6505&run=true')">
+Lihat Program
+</button>
+</div>
+
+<div class="card">
+<h2>Program 8</h2>
+<button onclick="buka('https://dartpad.dev/embed-inline.html?id=1f0c95c011d4fba88f8a7eff4b74f0e6&run=true')">
+Lihat Program
+</button>
+</div>
+
+<div class="card">
+<h2>Program 9</h2>
+<button onclick="buka('https://dartpad.dev/embed-inline.html?id=ee46a546d9d85bf8236f0c23f00a99da&run=true')">
+Lihat Program
+</button>
+</div>
+
+<!-- PROGRAM 10 TANPA LINK -->
+<div class="card">
+<h2>Program 10</h2>
+<p>Program tambahan untuk memperlihatkan penggunaan class pada aplikasi sederhana.</p>
+</div>
+
+<div class="card">
+<h2>Program 11</h2>
+<button onclick="buka('https://dartpad.dev/embed-inline.html?id=7a8476b9463e5c7df5b38a6f4da4020e&run=true')">
+Lihat Program
+</button>
+</div>
+
+<div class="card">
+
+<h2>Kesimpulan</h2>
+
+<p>
+Dengan menggunakan konsep Object Oriented Programming, program dapat
+dibuat lebih terstruktur, mudah dipahami, dan mudah dikembangkan.
+</p>
+
+</div>
+
+</div>
+
+<div id="popup" class="popup">
+
+<div class="popup-content">
+
+<button class="close" onclick="tutup()">Tutup</button>
+
+<iframe id="frame"></iframe>
+
+</div>
+
+</div>
 
 </body>
 </html>
