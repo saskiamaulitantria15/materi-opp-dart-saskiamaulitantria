@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Laporan OOP Dart</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Segoe UI, sans-serif;
+background:#FFF9C4;
+color:#5d4037;
+}
+
+header{
+background:#FFE082;
+padding:40px;
+text-align:center;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+margin-bottom:25px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+.card h2{
+margin-top:0;
+color:#8d6e63;
+}
+
+button{
+background:#FFD54F;
+border:none;
+padding:10px 18px;
+border-radius:8px;
+cursor:pointer;
+font-size:15px;
+}
+
+button:hover{
+background:#FFCA28;
+}
+
+.popup{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+justify-content:center;
+align-items:center;
+}
+
+.popup-content{
+background:white;
+width:90%;
+height:85%;
+border-radius:12px;
+padding:15px;
+}
+
+iframe{
+width:100%;
+height:90%;
+border:none;
+border-radius:10px;
+}
+
+.close{
+background:#ef5350;
+color:white;
+margin-bottom:10px;
+}
+
+@media(max-width:600px){
+
+.popup-content{
+height:90%;
+}
+
+}
+
+</style>
+
+<script>
+
+function buka(link){
+document.getElementById("popup").style.display="flex";
+document.getElementById("frame").src=link;
+}
+
+function tutup(){
+document.getElementById("popup").style.display="none";
+document.getElementById("frame").src="";
+}
+
+</script>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>LAPORAN PRAKTIKUM OOP DART</h1>
+
+<p>Nama        : Saskia Mauli Tantria</p>
+<p>NIM         : 251410034
+<p>Kelas       : SI2A
+<p>Mata Kuliah : Object Oriented Programming</p>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Pengertian OOP</h2>
+
+<p>
+Object Oriented Programming (OOP) adalah paradigma pemrograman yang
+menggunakan konsep objek dan class untuk menyusun struktur program.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Konsep Dasar OOP</h2>
+
+<ul>
+<li>Class</li>Merupakan blueprint atau cetakan untuk membuat objek.</li>
+<li>Object</li>Merupakan hasil dari pembuatan class.</li>
+<li>Encapsulation</li>Menggabungkan data dan method dalam satu objek.</li>
+<li>Inheritance</li>Pewarisan sifat dari class lainnya.</li>
+<li>Polymorphism</li>Satu method dapat mempunyai banyak bentuk.</li>
+</ul>
+
+</div>
+
+<!-- PROGRAM 1 TANPA LINK -->
+<div class="card">
+<h2>Program 1</h2>
+<p>Contoh program dasar class dan object pada Dart.</p>
+</div>
+
+<!-- PROGRAM 2 TANPA LINK -->
+<div class="card">
+<h2>Program 2</h2>
+<p>Contoh penggunaan constructor pada class.</p>
+</div>
+
+<div class="card">
+<h2>Program 3</h2>
+<button onclick="buka('https://dartpad.dev/embed-inline.html?id=91e868103a90d2690e2fc6ddf59a1a17&run=true')">
+Lihat Program
+</button>
+</div>
+
+<div class="card">
+<h2>Program 4</h2>
+<button onclick="buka('https://dartpad.dev/embed-inline.html?id=62d900a30717865ed2fc7f248c33fb0a&run=true')">
+Lihat Program
+</button>
+</div>
+
+<div class="card">
+<h2>Program 5</h2>
+<button onclick="buka('https://dartpad.dev/embed-inline.html?id=7381bbfa23b87ca7b99ae2932d716235&run=true')">
+Lihat Program
+</button>
+</div>
+
+<div class="card">
+<h2>Program 6</h2>
+<button onclick="buka('https://dartpad.dev/embed-inline.html?id=22917ac265c62a9bf43b773798cd9baf&run=true')">
+Lihat Program
+</button>
+</div>
+
+<div class="card">
+<h2>Program 7</h2>
+<button onclick="buka('https://dartpad.dev/embed-inline.html?id=2597faefa73fad81b2d49a6d004b6505&run=true')">
+Lihat Program
+</button>
+</div>
+
+<div class="card">
+<h2>Program 8</h2>
+<button onclick="buka('https://dartpad.dev/embed-inline.html?id=1f0c95c011d4fba88f8a7eff4b74f0e6&run=true')">
+Lihat Program
+</button>
+</div>
+
+<div class="card">
+<h2>Program 9</h2>
+<button onclick="buka('https://dartpad.dev/embed-inline.html?id=ee46a546d9d85bf8236f0c23f00a99da&run=true')">
+Lihat Program
+</button>
+</div>
+
+<!-- PROGRAM 10 TANPA LINK -->
+<div class="card">
+<h2>Program 10</h2>
+<p>Program tambahan untuk memperlihatkan penggunaan class pada aplikasi sederhana.</p>
+</div>
+
+<div class="card">
+<h2>Program 11</h2>
+<button onclick="buka('https://dartpad.dev/embed-inline.html?id=7a8476b9463e5c7df5b38a6f4da4020e&run=true')">
+Lihat Program
+</button>
+</div>
+
+<div class="card">
+
+<h2>Kesimpulan</h2>
+
+<p>
+Dengan menggunakan konsep Object Oriented Programming, program dapat
+dibuat lebih terstruktur, mudah dipahami, dan mudah dikembangkan.
+</p>
+
+</div>
+
+</div>
+
+<div id="popup" class="popup">
+
+<div class="popup-content">
+
+<button class="close" onclick="tutup()">Tutup</button>
+
+<iframe id="frame"></iframe>
+
+</div>
+
+</div>
+
+</body>
+</html>
