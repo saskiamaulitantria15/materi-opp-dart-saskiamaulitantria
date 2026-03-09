@@ -1,211 +1,140 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Materi OOP Dart</title>
-
-<style>
-
-body{
-font-family:Arial;
-margin:0;
-background:#FFF9DB;
-}
-
-header{
-background:#FFE066;
-padding:20px;
-text-align:center;
-font-size:24px;
-font-weight:bold;
-}
-
-.container{
-max-width:900px;
-margin:auto;
-padding:20px;
-}
-
-.card{
-background:white;
-padding:20px;
-margin-bottom:20px;
-border-radius:12px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
-}
-
-button{
-background:#FFD43B;
-border:none;
-padding:10px 18px;
-border-radius:8px;
-cursor:pointer;
-margin-top:10px;
-font-weight:bold;
-}
-
-button:hover{
-background:#FCC419;
-}
-
-iframe{
-margin-top:15px;
-border:none;
-border-radius:10px;
-width:100%;
-height:500px;
-}
-
-pre{
-background:#F8F9FA;
-padding:15px;
-border-radius:8px;
-overflow:auto;
-}
-
-</style>
-
-<script>
-
-function buka(id,link){
-
-var tempat=document.getElementById(id);
-
-if(tempat.innerHTML===""){
-
-tempat.innerHTML=
-'<iframe src="'+link+'?run=true&null_safety=true"></iframe>';
-
-}
-
-}
-
-</script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koleksi Program Dart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #FEF9E7; /* Kuning Pastel yang elegan */
+            color: #333;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+        }
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+        }
+        /* Styling khusus untuk Program 1 & 2 */
+        pre {
+            background: #282a36;
+            color: #f8f8f2;
+            padding: 1.5rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        .header-gradient {
+            background: linear-gradient(135deg, #F9E79F, #FAD7A1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
 </head>
+<body class="antialiased min-h-screen p-4 md:p-8">
 
-<body>
+    <div class="max-w-4xl mx-auto">
+        
+        <header class="text-center mb-12 mt-8">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gray-800">Koleksi Program <span class="text-yellow-600">Dart</span></h1>
+            <p class="text-gray-600 text-lg">Kumpulan proyek interaktif dan cuplikan kode Dart.</p>
+        </header>
 
-<header>
-Materi OOP Dart
-</header>
+        <div class="space-y-8">
 
-<div class="container">
+            <div class="card p-6 md:p-8">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800 flex items-center">
+                    <span class="bg-yellow-200 text-yellow-800 rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">1</span>
+                    Program 1
+                </h2>
+                <pre><code>void main() {
+  // Masukkan paste kode Dart dari Gist 91e868103a90d2690e2fc6ddf59a1a17 di sini
+  print('Halo, ini Program 1 statis!');
+}</code></pre>
+            </div>
 
-<!-- PROGRAM 1 -->
+            <div class="card p-6 md:p-8">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800 flex items-center">
+                    <span class="bg-yellow-200 text-yellow-800 rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">2</span>
+                    Program 2
+                </h2>
+                <pre><code>void main() {
+  // Masukkan paste kode Dart dari Gist 62d900a30717865ed2fc7f248c33fb0a di sini
+  print('Halo, ini Program 2 statis!');
+}</code></pre>
+            </div>
 
-<div class="card">
-<h3>Program 1</h3>
+            <div class="card p-6 md:p-8">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800 flex items-center">
+                    <span class="bg-yellow-200 text-yellow-800 rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">3</span>
+                    Program 3
+                </h2>
+                <iframe src="https://dartpad.dev/embed-inline.html?id=7381bbfa23b87ca7b99ae2932d716235&run=true" title="DartPad Program 3"></iframe>
+            </div>
 
-<pre>
-void main() {
+            <div class="card p-6 md:p-8">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800 flex items-center">
+                    <span class="bg-yellow-200 text-yellow-800 rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">4</span>
+                    Program 4
+                </h2>
+                <iframe src="https://dartpad.dev/embed-inline.html?id=22917ac265c62a9bf43b773798cd9baf&run=true" title="DartPad Program 4"></iframe>
+            </div>
 
-  print("Hello World");
+            <div class="card p-6 md:p-8">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800 flex items-center">
+                    <span class="bg-yellow-200 text-yellow-800 rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">5</span>
+                    Program 5
+                </h2>
+                <iframe src="https://dartpad.dev/embed-inline.html?id=2597faefa73fad81b2d49a6d004b6505&run=true" title="DartPad Program 5"></iframe>
+            </div>
 
-}
-</pre>
+            <div class="card p-6 md:p-8">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800 flex items-center">
+                    <span class="bg-yellow-200 text-yellow-800 rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">6</span>
+                    Program 6
+                </h2>
+                <iframe src="https://dartpad.dev/embed-inline.html?id=1f0c95c011d4fba88f8a7eff4b74f0e6&run=true" title="DartPad Program 6"></iframe>
+            </div>
 
-</div>
+            <div class="card p-6 md:p-8">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800 flex items-center">
+                    <span class="bg-yellow-200 text-yellow-800 rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">7</span>
+                    Program 7
+                </h2>
+                <iframe src="https://dartpad.dev/embed-inline.html?id=ee46a546d9d85bf8236f0c23f00a99da&run=true" title="DartPad Program 7"></iframe>
+            </div>
 
-<!-- PROGRAM 2 -->
+            <div class="card p-6 md:p-8">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800 flex items-center">
+                    <span class="bg-yellow-200 text-yellow-800 rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">8</span>
+                    Program 8
+                </h2>
+                <iframe src="https://dartpad.dev/embed-inline.html?id=7a8476b9463e5c7df5b38a6f4da4020e&run=true" title="DartPad Program 8"></iframe>
+            </div>
 
-<div class="card">
-<h3>Program 2</h3>
+        </div>
 
-<pre>
-void main() {
+        <footer class="mt-12 text-center text-gray-500 text-sm pb-8">
+            Dibuat dengan 💛 menggunakan HTML & Tailwind CSS
+        </footer>
 
-  String nama = "Saskia";
-
-  print("Halo " + nama);
-
-}
-</pre>
-
-</div>
-
-<!-- PROGRAM 3 -->
-
-<div class="card">
-<h3>Program 3</h3>
-
-<button onclick="buka('dart3','https://dartpad.dev/embed-inline.html?id=7381bbfa23b87ca7b99ae2932d716235')">
-Jalankan Program
-</button>
-
-<div id="dart3"></div>
-
-</div>
-
-<!-- PROGRAM 4 -->
-
-<div class="card">
-<h3>Program 4</h3>
-
-<button onclick="buka('dart4','https://dartpad.dev/embed-inline.html?id=22917ac265c62a9bf43b773798cd9baf')">
-Jalankan Program
-</button>
-
-<div id="dart4"></div>
-
-</div>
-
-<!-- PROGRAM 5 -->
-
-<div class="card">
-<h3>Program 5</h3>
-
-<button onclick="buka('dart5','https://dartpad.dev/embed-inline.html?id=2597faefa73fad81b2d49a6d004b6505')">
-Jalankan Program
-</button>
-
-<div id="dart5"></div>
-
-</div>
-
-<!-- PROGRAM 6 -->
-
-<div class="card">
-<h3>Program 6</h3>
-
-<button onclick="buka('dart6','https://dartpad.dev/embed-inline.html?id=1f0c95c011d4fba88f8a7eff4b74f0e6')">
-Jalankan Program
-</button>
-
-<div id="dart6"></div>
-
-</div>
-
-<!-- PROGRAM 7 -->
-
-<div class="card">
-<h3>Program 7</h3>
-
-<button onclick="buka('dart7','https://dartpad.dev/embed-inline.html?id=ee46a546d9d85bf8236f0c23f00a99da')">
-Jalankan Program
-</button>
-
-<div id="dart7"></div>
-
-</div>
-
-<!-- PROGRAM 8 -->
-
-<div class="card">
-<h3>Program 8</h3>
-
-<button onclick="buka('dart8','https://dartpad.dev/embed-inline.html?id=7a8476b9463e5c7df5b38a6f4da4020e')">
-Jalankan Program
-</button>
-
-<div id="dart8"></div>
-
-</div>
-
-</div>
+    </div>
 
 </body>
 </html>
